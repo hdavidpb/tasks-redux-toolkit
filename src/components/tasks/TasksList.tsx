@@ -26,7 +26,11 @@ const TasksList = () => {
           {tasks.map((task, index) => (
             <sc.TasksListContainer key={task.id}>
               <sc.TasksItemContainer
-                style={{ background: task.done ? "#1ed81eb3" : "#ffee00ab" }}
+                style={{
+                  background: task.done
+                    ? "rgb(30 137 216)"
+                    : "rgb(255 215 0 / 95%)",
+                }}
               >
                 <h4>{task.title}</h4>
                 <p> {task.description}</p>

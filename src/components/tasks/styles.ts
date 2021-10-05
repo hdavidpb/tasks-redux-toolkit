@@ -13,6 +13,12 @@ export const ContainerTasks = styled.div`
     width: 1370px;
     border: solid 1px red;
   }
+
+  @media (max-width: 700px) {
+    margin: auto;
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 export const TasksFormContainer = styled.div`
@@ -24,6 +30,10 @@ export const TasksFormContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
+
+  @media (max-width: 500px) {
+    width: 98%;
+  }
 `;
 
 export const FormContainer = styled.form`
@@ -37,11 +47,13 @@ export const FormContainer = styled.form`
 `;
 
 export const TitleLabel = styled.h1`
-  width: 100%;
   text-align: center;
   color: #0c1545;
   font-size: 17px;
   color: #1000ff7a;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 6px;
 `;
 
 export const InputContainer = styled.div`
@@ -55,6 +67,7 @@ export const InputContainer = styled.div`
   padding: 10px;
   border: solid 1px #1000ff7a;
   border-radius: 6px;
+  background: #ffffff;
 
   & h6 {
     margin-bottom: 0;
@@ -108,6 +121,10 @@ export const TasksListContainer = styled.div`
   justify-content: flex-start;
   gap: 1rem;
   padding: 1rem;
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 50vh;
+  }
 `;
 
 export const TasksTableContainer = styled.div`
